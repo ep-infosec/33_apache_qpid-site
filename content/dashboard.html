@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<!--
+ -
+ - Licensed to the Apache Software Foundation (ASF) under one
+ - or more contributor license agreements.  See the NOTICE file
+ - distributed with this work for additional information
+ - regarding copyright ownership.  The ASF licenses this file
+ - to you under the Apache License, Version 2.0 (the
+ - "License"); you may not use this file except in compliance
+ - with the License.  You may obtain a copy of the License at
+ -
+ -   http://www.apache.org/licenses/LICENSE-2.0
+ -
+ - Unless required by applicable law or agreed to in writing,
+ - software distributed under the License is distributed on an
+ - "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ - KIND, either express or implied.  See the License for the
+ - specific language governing permissions and limitations
+ - under the License.
+ -
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+  <head>
+    <title>Dashboard - Apache Qpid&#8482;</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/site.css" type="text/css" async="async"/>
+    <link rel="stylesheet" href="/deferred.css" type="text/css" defer="defer"/>
+    <script type="text/javascript">var _deferredFunctions = [];</script>
+    <script type="text/javascript" src="/deferred.js" defer="defer"></script>
+    <!--[if lte IE 8]>
+      <link rel="stylesheet" href="/ie.css" type="text/css"/>
+      <script type="text/javascript" src="/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Redirects for `go get` and godoc.org -->
+    <meta name="go-import"
+          content="qpid.apache.org git https://gitbox.apache.org/repos/asf/qpid-proton.git"/>
+    <meta name="go-source"
+          content="qpid.apache.org
+https://github.com/apache/qpid-proton/blob/go1/README.md
+https://github.com/apache/qpid-proton/tree/go1{/dir}
+https://github.com/apache/qpid-proton/blob/go1{/dir}/{file}#L{line}"/>
+  </head>
+  <body>
+    <div id="-content">
+      <div id="-top" class="panel">
+        <a id="-menu-link"><img width="16" height="16" src="" alt="Menu"/></a>
+
+        <a id="-search-link"><img width="22" height="16" src="" alt="Search"/></a>
+
+        <ul id="-global-navigation">
+          <li><a id="-logotype" href="/index.html">Apache Qpid<sup>&#8482;</sup></a></li>
+          <li><a href="/documentation.html">Documentation</a></li>
+          <li><a href="/download.html">Download</a></li>
+          <li><a href="/discussion.html">Discussion</a></li>
+        </ul>
+      </div>
+
+      <div id="-menu" class="panel" style="display: none;">
+        <div class="flex">
+          <section>
+            <h3>Project</h3>
+
+            <ul>
+              <li><a href="/overview.html">Overview</a></li>
+              <li><a href="/components/index.html">Components</a></li>
+              <li><a href="/releases/index.html">Releases</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Messaging APIs</h3>
+
+            <ul>
+              <li><a href="/proton/index.html">Qpid Proton</a></li>
+              <li><a href="/components/jms/index.html">Qpid JMS</a></li>
+              <li><a href="/components/messaging-api/index.html">Qpid Messaging API</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Servers and tools</h3>
+
+            <ul>
+              <li><a href="/components/broker-j/index.html">Broker-J</a></li>
+              <li><a href="/components/cpp-broker/index.html">C++ broker</a></li>
+              <li><a href="/components/dispatch-router/index.html">Dispatch router</a></li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Resources</h3>
+
+            <ul>
+              <li><a href="/dashboard.html">Dashboard</a></li>
+              <li><a href="https://cwiki.apache.org/confluence/display/qpid/Index">Wiki</a></li>
+              <li><a href="/resources.html">More resources</a></li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div id="-search" class="panel" style="display: none;">
+        <form action="http://www.google.com/search" method="get">
+          <input type="hidden" name="sitesearch" value="qpid.apache.org"/>
+          <input type="text" name="q" maxlength="255" autofocus="autofocus" tabindex="1"/>
+          <button type="submit">Search</button>
+          <a href="/search.html">More ways to search</a>
+        </form>
+      </div>
+
+      <div id="-middle" class="panel">
+        <ul id="-path-navigation"><li><a href="/index.html">Home</a></li><li>Dashboard</li></ul>
+
+        <div id="-middle-content">
+          <div id="-dashboard-forms">
+  <form id="-jira-goto-form">
+    Go to <span class="accesskey">i</span>ssue <input name="jira" accesskey="i" autofocus="autofocus" tabindex="1"/>
+  </form>
+
+  <form id="-jira-search-form">
+    <span class="accesskey">S</span>earch issues <input name="text" type="text" accesskey="s" tabindex="3"/>
+  </form>
+</div>
+
+<h1 id="dashboard">Dashboard</h1>
+
+<div id="-source-modules" class="scroll">
+
+<table>
+<thead>
+<tr>
+  <th>Module</th>
+  <th>Release</th>
+  <th>Issues</th>
+  <th>Tests</th>
+  <th>Source code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><a href="/components/broker-j/index.html">Qpid Broker-J</a></td>
+  <td><a href="/releases/qpid-broker-j-9.0.0">9.0.0</a></td>
+  <td><a href="https://issues.apache.org/jira/projects/QPID">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+resolution+is+null+and+component+in+%28%22Broker-J%22%2C+%22Java+Build%22%2C+%22Java+Documentation%22%2C+%22Java+Performance+Tests%22%2C+%22Java+Tests%22%2C+%22Java+Tools%22%29">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+component+in+%28%22Broker-J%22%2C+%22Java+Build%22%2C+%22Java+Documentation%22%2C+%22Java+Performance+Tests%22%2C+%22Java+Tests%22%2C+%22Java+Tools%22%29">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12310520">Create issue</a></td>
+  <td><a href="https://travis-ci.com/github/apache/qpid-broker-j"><img src="https://travis-ci.com/apache/qpid-broker-j.svg?branch=main" height="20"/></a></td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-broker-j.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-broker-j">GitHub</a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/apache/qpid-cpp/blob/main/README.md">Qpid C++</a></td>
+  <td><a href="/releases/qpid-cpp-1.39.0">1.39.0</a></td>
+  <td><a href="https://issues.apache.org/jira/projects/QPID">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+resolution+is+null+and+component+in+%28%22C%2B%2B+Broker%22%2C+%22C%2B%2B+Build%22%2C+%22C%2B%2B+Client%22%2C+%22C%2B%2B+Clustering%22%2C+%22C%2B%2B+Documentation%22%2C+%22C%2B%2B+Tests%22%2C+%22C%2B%2B+Tools%22%2C+%22.NET+Client%22%2C+%22Perl+Client%22%2C+%22Python+Client+%28Wrapped%29%22%2C+%22QMF%22%2C+%22Ruby+Client%22%29">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+component+in+%28%22C%2B%2B+Broker%22%2C+%22C%2B%2B+Build%22%2C+%22C%2B%2B+Client%22%2C+%22C%2B%2B+Clustering%22%2C+%22C%2B%2B+Documentation%22%2C+%22C%2B%2B+Tests%22%2C+%22C%2B%2B+Tools%22%2C+%22.NET+Client%22%2C+%22Perl+Client%22%2C+%22Python+Client+%28Wrapped%29%22%2C+%22QMF%22%2C+%22Ruby+Client%22%29">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12310520">Create issue</a></td>
+  <td><a href="https://builds.apache.org/blue/organizations/jenkins/Qpid%2FQpid-CPP-Test/activity"><img src="https://builds.apache.org/buildStatus/icon?job=Qpid/Qpid-CPP-Test" height="20"/></a> <a href="https://ci.appveyor.com/project/ApacheSoftwareFoundation/qpid-cpp/branch/main"><img src="https://ci.appveyor.com/api/projects/status/wma611lkq1fcyo18?svg=true" height="20"/></a></td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-cpp.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-cpp">GitHub</a></td>
+</tr>
+<tr>
+  <td><a href="/components/dispatch-router/index.html">Qpid Dispatch</a></td>
+  <td><a href="/releases/qpid-dispatch-1.19.0">1.19.0</a></td>
+  <td><a href="https://issues.apache.org/jira/projects/DISPATCH">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+DISPATCH+and+resolution+is+null">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+DISPATCH">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12315321">Create issue</a></td>
+  <td><a href="https://travis-ci.com/github/apache/qpid-dispatch"><img src="https://travis-ci.com/apache/qpid-dispatch.svg?branch=main" height="20"/></a></td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-dispatch.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-dispatch">GitHub</a></td>
+</tr>
+<tr>
+  <td><a href="/components/interop-test/index.html">Qpid Interop Test</a></td>
+  <td><a href="/releases/qpid-interop-test-0.3.0">0.3.0</a></td>
+  <td><a href="https://issues.apache.org/jira/projects/QPIDIT">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPIDIT+and+resolution+is+null">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPIDIT">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12318621">Create issue</a></td>
+  <td>-</td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-interop-test.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-interop-test">GitHub</a></td>
+</tr>
+<tr>
+  <td><a href="/components/jms/index.html">Qpid JMS</a></td>
+  <td><a href="/releases/qpid-jms-2.1.0">2.1.0</a></td>
+  <td><a href="https://issues.apache.org/jira/projects/QPIDJMS">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPIDJMS+and+resolution+is+null">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPIDJMS">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12314524">Create issue</a></td>
+  <td><a href="https://builds.apache.org/blue/organizations/jenkins/Qpid%2FQpid-JMS-Test-JDK11/activity"><img src="https://builds.apache.org/buildStatus/icon?job=Qpid/Qpid-JMS-Test-JDK11" height="20"/></a> <a href="https://travis-ci.com/github/apache/qpid-jms"><img src="https://travis-ci.com/apache/qpid-jms.svg?branch=main" height="20"/></a> <a href="https://builds.apache.org/blue/organizations/jenkins/Qpid%2FQpid-JMS-Test-JDK11-Windows/activity"><img src="https://builds.apache.org/buildStatus/icon?job=Qpid/Qpid-JMS-Test-JDK11-Windows" height="20"/></a></td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-jms.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-jms">GitHub</a></td>
+</tr>
+<tr>
+  <td><a href="/components/jms/amqp-0-x.html">Qpid JMS AMQP 0-x</a></td>
+  <td><a href="/releases/qpid-jms-amqp-0-x-6.4.0">6.4.0</a></td>
+  <td><a href="https://issues.apache.org/jira/projects/QPID">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+resolution+is+null+and+component+in+%28%22JMS+AMQP+0-x%22%29">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+component+in+%28%22JMS+AMQP+0-x%22%29">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12310520">Create issue</a></td>
+  <td><a href="https://builds.apache.org/job/Qpid/job/Qpid-JMS-AMQP-0-x-Broker-J-TestMatrix"><img src="https://builds.apache.org/buildStatus/icon?job=Qpid/Qpid-JMS-AMQP-0-x-Broker-J-TestMatrix" height="20"/></a></td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-jms-amqp-0-x.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-jms-amqp-0-x">GitHub</a></td>
+</tr>
+<tr>
+  <td><a href="/proton/index.html">Qpid Proton-J</a></td>
+  <td><a href="/releases/qpid-proton-j-0.34.0">0.34.0</a></td>
+  <td><a href="https://issues.apache.org/jira/projects/PROTON">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+PROTON+and+resolution+is+null+and+component+in+%28%22proton-j%22%29">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+PROTON+and+component+in+%28%22proton-j%22%29">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12313720">Create issue</a></td>
+  <td><a href="https://builds.apache.org/blue/organizations/jenkins/Qpid%2FQpid-Proton-J-JDK8/activity"><img src="https://builds.apache.org/buildStatus/icon?job=Qpid/Qpid-Proton-J-JDK8" height="20"/></a> <a href="https://travis-ci.com/github/apache/qpid-proton-j"><img src="https://travis-ci.com/apache/qpid-proton-j.svg?branch=main" height="20"/></a></td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-proton-j.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-proton-j">GitHub</a></td>
+</tr>
+<tr>
+  <td><a href="/proton/index.html">Qpid Proton</a></td>
+  <td><a href="/releases/qpid-proton-0.38.0">0.38.0</a></td>
+  <td><a href="https://issues.apache.org/jira/projects/PROTON">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+PROTON+and+resolution+is+null">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+PROTON">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12313720">Create issue</a></td>
+  <td><a href="https://builds.apache.org/blue/organizations/jenkins/Qpid%2FQpid-Proton-C/activity"><img src="https://builds.apache.org/buildStatus/icon?job=Qpid/Qpid-Proton-C" height="20"/></a> <a href="https://travis-ci.com/github/apache/qpid-proton"><img src="https://travis-ci.com/apache/qpid-proton.svg?branch=main" height="20"/></a></td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-proton.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-proton">GitHub</a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/apache/qpid-python/blob/main/README.md">Qpid Python</a></td>
+  <td><a href="/releases/qpid-python-1.37.0">1.37.0</a></td>
+  <td><a href="https://issues.apache.org/jira/projects/QPID">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+resolution+is+null+and+component+in+%28%22Python+Client%22%2C+%22Python+Examples%22%2C+%22Python+Test+Suite%22%29">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+component+in+%28%22Python+Client%22%2C+%22Python+Examples%22%2C+%22Python+Test+Suite%22%29">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12310520">Create issue</a></td>
+  <td>-</td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-python.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-python">GitHub</a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/apache/qpid-site/blob/asf-site/README.md">Qpid Site</a></td>
+  <td>-</td>
+  <td><a href="https://issues.apache.org/jira/projects/QPID">Summary</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+resolution+is+null+and+component+in+%28%22Website%22%29">Open issues</a> &#x2022; <a href="https://issues.apache.org/jira/issues/?jql=project+%3D+QPID+and+component+in+%28%22Website%22%29">All issues</a> &#x2022; <a href="https://issues.apache.org/jira/secure/CreateIssue!default.jspa?pid=12310520">Create issue</a></td>
+  <td><a href="https://travis-ci.com/github/apache/qpid-site"><img src="https://travis-ci.com/apache/qpid-site.svg?branch=asf-site" height="20"/></a></td>
+  <td><a href="https://gitbox.apache.org/repos/asf/qpid-site.git">Git</a> &#x2022; <a href="https://github.com/apache/qpid-site">GitHub</a></td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<hr />
+
+<section id="-dashboard-links" class="flex">
+
+<section>
+
+<h3 id="issues">Issues</h3>
+
+<ul>
+<li><a href="https://issues.apache.org/jira/issues/?filter=-1">Your assigned issues</a></li>
+<li><a href="https://issues.apache.org/jira/issues/?filter=-2">Your reported issues</a></li>
+<li><a href="https://issues.apache.org/jira/issues/?filter=-3">Your recent issues</a></li>
+<li><a href="https://issues.apache.org/jira/issues/?jql=project%20in%20(QPID%2C%20QPIDIT%2C%20QPIDJMS%2C%20PROTON%2C%20DISPATCH)">All Qpid issues</a></li>
+</ul>
+
+</section>
+
+<section>
+
+<h3 id="list-archives">List archives</h3>
+
+<ul>
+<li><a href="https://lists.apache.org/list.html?users@qpid.apache.org">Users</a></li>
+<li><a href="https://lists.apache.org/list.html?dev@qpid.apache.org">Developers</a></li>
+<li><a href="https://lists.apache.org/list.html?commits@qpid.apache.org">Commits</a></li>
+<li><a href="https://lists.apache.org/list.html?notifications@qpid.apache.org">Notifications</a></li>
+</ul>
+
+</section>
+
+<section>
+
+<h3 id="apache-services">Apache services</h3>
+
+<ul>
+<li><a href="https://builds.apache.org/view/M-R/view/Qpid/">Qpid at Jenkins</a></li>
+<li><a href="https://reviews.apache.org/groups/qpid/">Qpid at Review Board</a></li>
+<li><a href="http://s.apache.org/">URL shortener</a></li>
+<li><a href="https://paste.apache.org/">Pastebin</a></li>
+</ul>
+
+</section>
+
+<section>
+
+<h3 id="wiki">Wiki</h3>
+
+<ul>
+<li><a href="https://cwiki.apache.org/confluence/display/qpid/Index">Index</a></li>
+<li><a href="https://cwiki.apache.org/confluence/display/qpid/developer+pages">Developer pages</a></li>
+<li><a href="https://cwiki.apache.org/confluence/display/qpid/documentation">Documentation</a></li>
+<li><a href="https://cwiki.apache.org/confluence/display/qpid/Releases">Releases</a></li>
+</ul>
+
+</section>
+
+<section>
+
+<h3 id="more">More</h3>
+
+<ul>
+<li><a href="/components/index.html">Components</a></li>
+<li><a href="/releases/index.html">Releases</a></li>
+</ul>
+
+</section>
+
+</section>
+
+
+          <hr/>
+
+          <ul id="-apache-navigation">
+            <li><a href="http://www.apache.org/">Apache</a></li>
+            <li><a href="http://www.apache.org/licenses/">License</a></li>
+            <li><a href="http://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>
+            <li><a href="http://www.apache.org/foundation/thanks.html">Thanks!</a></li>
+            <li><a href="/security.html">Security</a></li>
+            <li><a href="http://www.apache.org/"><img id="-apache-feather" width="48" height="14" src="" alt="Apache"/></a></li>
+          </ul>
+
+          <p id="-legal">
+            Apache Qpid, Messaging built on AMQP; Copyright &#169; 2015
+            The Apache Software Foundation; Licensed under
+            the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache
+            License, Version 2.0</a>; Apache Qpid, Qpid, Qpid Proton,
+            Proton, Apache, the Apache feather logo, and the Apache Qpid
+            project logo are trademarks of The Apache Software
+            Foundation; All other marks mentioned may be trademarks or
+            registered trademarks of their respective owners
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
